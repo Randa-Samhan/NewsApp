@@ -1,0 +1,33 @@
+<!-- res/layout/activity_edit_profile.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editFirstNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editLastNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editFirstNameEditText"
+        android:layout_marginTop="8dp"
+        android:hint="Last Name"
+        android:inputType="text" />
+
+    <!-- Add other profile edit fields as needed -->
+
+    <Button
+        android:id="@+id/saveProfileButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editLastNameEditText"
+        android:layout_marginTop="16dp"
+        android:text="Save Profile" />
+
+</RelativeLayout>
